@@ -5,19 +5,33 @@ body{
   padding: 0;
   width: 100vw;
   height: 100vh;
+  align-items: center;
 }
 
-.title{
-  color: red;
+.inputView{
+  outline-style: none ;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 13px 14px;
+  margin-top: 13vw;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Microsoft soft";
+  width: 74vw;
+  height: 6vw;
+}
+
+.inputView:focus{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 
 .logo{
-  align-self: center;
-  margin-top: 166px;
+  /*align-self: center;*/
+  margin-top: 18vw;
+  width: 81px;
+  height: 81px;
 }
 
-.background{
-  background: #b3d4fc;
-  width: 100vw;
-  height: 100vh;
-}
