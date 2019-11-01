@@ -9,7 +9,8 @@ body{
 }
 
 .inputView{
-  outline-style: none ;
+  box-sizing: border-box;/*LF 真实宽高*/
+  outline-style: none;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 13px 14px;
@@ -18,7 +19,7 @@ body{
   font-weight: 700;
   font-family: "Microsoft soft";
   width: 74vw;
-  height: 6vw;
+  height: 12vw;
 }
 
 .inputView:focus{
@@ -33,5 +34,35 @@ body{
   margin-top: 18vw;
   width: 81px;
   height: 81px;
+}
+
+.loginView {
+  /*background-color: #4CAF50; !* Green *!*/
+  border: none;
+  color: white;
+  /*padding: 16px 32px;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  width: 74vw;
+  height: 10vw;
+}
+
+.loginViewBlue {
+  margin-top: 12vw;
+  background-color: #3F89F8;
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.loginViewBlue:checked {
+  background-color: #008CBA;
+  color: white;
 }
 
