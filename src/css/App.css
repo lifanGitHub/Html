@@ -1,0 +1,44 @@
+.appConfirmDiv{
+  width: 100vw;
+  height: 18.2vw;
+  background: #FFFFFF;
+
+  position:fixed;
+  bottom:0;
+
+  display: flex;
+  align-items: center;
+}
+
+.appConfirmSP{
+  width: 100vw;
+  height: 18.2vw;
+}
+
+.appConfirmBtn{
+  margin-left: 5.3vw;
+  margin-right: 5.3vw;
+  height: 10vw;
+  width: 89.3vw;
+  line-height: 10vw;
+
+  /*padding: 16px 32px;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  background-color: #3F89F8;
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.appConfirmBtn:active {
+  background-color: #579EE5;
+  color: white;
+}
+
