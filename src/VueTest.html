@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+  <link rel="stylesheet" href="css/VueTest.css"/>
+  <link rel="stylesheet" href="css/App.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <title>Title</title>
+</head>
+<body>
+<div id="rootVue" class="rootView">
+  <div v-on:click="reverseMessage" class="btn">{{showData}}</div>
+  <div v-on:click="click2" v-bind:class="{'btn' : isA1, 'btn2' : isA2, className : isA3}" v-bind:title="tt">v-bind测试
+  </div>
+
+  <div class = "appConfirmSP"></div>
+  <div class="appConfirmDiv">
+    <div type="primary" class="appConfirmBtn" onTap="onConfirm">到达现场</div>
+  </div>
+
+</div>
+
+
+<script src="js/VueTest.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</body>
+</html>
