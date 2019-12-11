@@ -1,11 +1,20 @@
-body{
+/*body{*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  !*width: 100vw;*!*/
+/*  !*height: 100vh;*!*/
+/*  align-items: center;*/
+/*  overflow-y:hidden;*/
+/*}*/
+
+.rootVue{
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
   align-items: center;
+  /*background: #b3d4fc;*/
+  /*background: red;*/
 }
 
 .inputView{
@@ -61,8 +70,8 @@ body{
   border: 2px solid #008CBA;
 }
 
-.loginViewBlue:checked {
-  background-color: #008CBA;
+.loginViewBlue:active {
+  background-color: #579EE5;
   color: white;
 }
 
