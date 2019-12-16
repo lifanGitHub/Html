@@ -1,0 +1,77 @@
+/*body{*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  !*width: 100vw;*!*/
+/*  !*height: 100vh;*!*/
+/*  align-items: center;*/
+/*  overflow-y:hidden;*/
+/*}*/
+
+.rootVue{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background: #b3d4fc;*/
+  /*background: red;*/
+}
+
+.inputView{
+  box-sizing: border-box;/*LF 真实宽高*/
+  outline-style: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 13px 14px;
+  margin-top: 13vw;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Microsoft soft";
+  width: 74vw;
+  height: 12vw;
+}
+
+.inputView:focus{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.logo{
+  /*align-self: center;*/
+  margin-top: 18vw;
+  width: 81px;
+  height: 81px;
+}
+
+.loginView {
+  /*background-color: #4CAF50; !* Green *!*/
+  border: none;
+  color: white;
+  /*padding: 16px 32px;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  width: 74vw;
+  height: 10vw;
+}
+
+.loginViewBlue {
+  margin-top: 12vw;
+  background-color: #3F89F8;
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.loginViewBlue:active {
+  background-color: #579EE5;
+  color: white;
+}
+
