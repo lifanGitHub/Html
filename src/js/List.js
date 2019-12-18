@@ -1,5 +1,5 @@
-// document.cookie = "JSESSIONID=38FB90CD808BC142261E938E64E6ED0E; path=/; domain=10.10.7.95; HttpOnly;";
-// console.log(document.cookie);
+document.cookie = "JSESSIONID=A4D4B6A122C5ECF451179AC2ABE8C8D7; path=/;  HttpOnly;";
+// domain=10.10.7.95;
 
 let v = {
   arr: []
@@ -20,13 +20,16 @@ function getHttpSrc() {
     data: {},
     type: "GET",
     dataType: "json",
+    crossDomain: true,
+    xhrFields: {
+      withCredentials: true
+    },
     headers: {
-      "Content-Type": "application/json",
-      "cookie":"JSESSIONID=5440FD1EAE7B10609A93732F7D8764E6"
+      "Content-Type": "application/json"
     },
     success: function (data,status,xhr) {
       console.log(data);
-      console.log("Cookie:" + xhr.getAllResponseHeaders());
+      // console.log("Cookie:" + xhr.getAllResponseHeaders());
       // if (App.ca(data)){
       //   window.location.href='VueTest.html';
       // }else {

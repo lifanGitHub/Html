@@ -33,5 +33,4 @@ let vm = new Vue({
       v.tt = (parseInt(v.tt)+1).toString();
     }
   }
-
 });

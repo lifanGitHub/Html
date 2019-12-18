@@ -1,11 +1,3 @@
-// function hello(str) {
-//   alert(str);
-// }
-//
-// function callback() {
-//   console.log("OK");
-// }
-
 let v = {
   authCode: ""
 };
@@ -20,21 +12,33 @@ let vm = new Vue({
 
 function onLogin() {
   let code = v.authCode.replace(new RegExp(`"`,'g'),"");
-  console.log(code);
-  $.ajax({
-    url: `${App.urlBase}login/DDlogin`,
-    data: {code: code},
-    type: "GET",
-    dataType: "json",
-    success: function (data) {
-      console.log(data);
-      if (App.ca(data)){
-        window.location.href='VueTest.html';
-      }else {
-        alert("登录失败")
-      }
-    }
-  });
-
+  // console.log(code);
+  // $.ajax({
+  //   url: `${App.urlBase}login/DDlogin`,
+  //   data: {code: code},
+  //   type: "GET",
+  //   dataType: "json",
+  //   // headers: {
+  //   //   "Content-Type": "application/json"
+  //   // },
+  //   crossDomain: true,
+  //   xhrFields: {
+  //     withCredentials: true
+  //   },
+  //   success: function (data,status,xhr) {
+  //     console.log(data);
+  //     console.log(xhr);
+  //     console.log("Cookie:" + xhr.getAllResponseHeaders());
+  //     // console.log(document);
+  //     // if (App.ca(data)){
+  //     //   localStorage.setItem( "session", JSON.stringify( window.sessvars) );
+  //     //   localStorage.setItem( "session", JSON.stringify(sessionStorage.getItem()) );
+  //     //   window.location.href='List.html';
+  //     // }else {
+  //     //   alert("登录失败")
+  //     // }
+  //   }
+  // });
 
 }
+
